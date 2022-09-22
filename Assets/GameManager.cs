@@ -34,10 +34,12 @@ public class GameManager : MonoBehaviour
     static StoryBlock block50 = new StoryBlock("Harry climbs upon a shelf and proceeds to spark. at long liesurly length, he is dazed and drifting.  He is then shocked when he sees some one walk past him and into the cave.", "wait, then leave.", "follow this person.", block1000, block1000);
     static StoryBlock block40 = new StoryBlock("Harry saunters atop the boulder and pulls out his lighter. however, the breeze makes lighting up difficult.", "give up and go home.", "go deeper...", block20, block60);
     static StoryBlock block30 = new StoryBlock("Forth goes Harry, into the mouth of the cave. He scans for a good place to sit and light up", "go to boulder on left.", "climb to a rock shelf on right", block40, block50);
-    static StoryBlock block20 = new StoryBlock("back you went, on home, no need for adventure", "Quit", "restart", block16, block15);
-    static StoryBlock block15 = new StoryBlock("Young Harry finds himself back at the entrance of the cave, /n, but Harry just wants a quiet place to smoke this joint.", "Be good. Go Home", "go forth", block20, block30);
+    static StoryBlock block23 = new StoryBlock("Young Harry finds himself back at the entrance of the cave, /n, but Harry just wants a quiet place to smoke this joint.", "Be good. Go Home", "go forth", block20, block30);
+
+    static StoryBlock block22 = new StoryBlock("Game Over!", "replay", "Quit", block23, block10);
+    static StoryBlock block20 = new StoryBlock("back you went, on home, no need for adventure", "Quit", "restart", block22, block23);
     static StoryBlock block10 = new StoryBlock("Young Harry knows about the rumors of treasure in the cave, /n, but Harry just wants a quiet place to smoke this joint.", "Be good. Go Home", "go forth", block20, block30);
-    static StoryBlock block16 = new StoryBlock("Game Over!", "replay", "Quit", block15, block10);
+   
 
     // Start is called before the first frame update
     void Start()
